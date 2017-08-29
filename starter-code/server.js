@@ -4,11 +4,11 @@ const pg = require('pg');
 const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 // const conString = 'postgres://USERNAME:PASSWORD@HOST:PORT';
-// const conString = 'postgres://localhost:5432/kilovolt';
-const conString = 'postgres://mstclair:dogfood1@postgres:5432';
+const conString = 'postgres://localhost:5432/kilovolt';
+// const conString = 'postgres://mstclair:dogfood1@postgres:5432';
 // done: Don't forget to set your own conString
 const client = new pg.Client(conString);
 client.connect();
