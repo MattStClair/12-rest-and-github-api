@@ -16,7 +16,6 @@ var app = app || {};
   // Save the result in this `render` variable.
 
   var template = $('#repo-template').html();
-
   var render = Handlebars.compile(template);
 
   repoView.index = function() {

@@ -11,7 +11,6 @@ var app = app || {};
     // Pass a view function as a callback, so the view will render after the data is loaded.
 
     app.repos.requestRepos(app.repoView.index);
-
   };
 
   module.aboutController = aboutController;
